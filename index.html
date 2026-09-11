@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gölge Diyarı</title>
+<style>
+  :root { --bg:#0c0e13; --panel:#151922; --edge:#252c3a; --text:#e7eaf1; --dim:#8992a6; --gold:#d9a441; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family: ui-monospace, SFMono-Regular, Menlo, monospace; line-height:1.65; }
+  .wrap { max-width: 720px; margin:0 auto; padding: 48px 20px 80px; }
+  header { text-align:center; margin-bottom: 48px; }
+  img.logo { width:128px; height:128px; }
+  h1 { color:var(--gold); letter-spacing:3px; margin:16px 0 4px; font-size:26px; }
+  .tag { color:var(--dim); margin:0; }
+  nav { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:28px; }
+  nav a { color:var(--text); text-decoration:none; border:1px solid var(--edge);
+          border-radius:10px; padding:8px 16px; font-size:14px; }
+  nav a:hover { border-color:var(--gold); color:var(--gold); }
+  section { background:var(--panel); border:1px solid var(--edge); border-radius:12px;
+            padding:24px; margin-bottom:20px; }
+  h2 { color:var(--gold); font-size:16px; letter-spacing:1px; margin-top:0; }
+  footer { color:var(--dim); font-size:13px; text-align:center; margin-top:40px; }
+  a { color:var(--gold); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="logo" src="logo.png" alt="Gölge Diyarı">
+    <h1>GÖLGE DİYARI</h1>
+    <p class="tag">Metin tabanlı karanlık fantezi RPG</p>
+    <nav>
+      <a href="privacy.html">Gizlilik Politikası</a>
+      <a href="terms.html">Kullanım Koşulları</a>
+      <a href="support.html">Destek</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>OYUN HAKKINDA</h2>
+    <p>On bölge, altmış bir canavar, kırk üç eşya tabanı. Avlan, akına çık,
+       boss'ları devir. Eşyalarını efsunla ve +9'a kadar yükselt — ama dikkat,
+       yüksek seviyede başarısız bir deneme eşyayı yok eder.</p>
+    <p>Tamamen çevrimdışı çalışır. Hesap istemez, internet istemez.</p>
+  </section>
+
+  <section>
+    <h2>KISACA GİZLİLİK</h2>
+    <p>Bu oyun <strong>hiçbir veri toplamaz ve hiçbir veri göndermez.</strong>
+       Karakterin yalnızca kendi cihazında saklanır. Sunucumuz yok, hesabın yok,
+       reklam yok, analitik yok.</p>
+    <p><a href="privacy.html">Ayrıntılı gizlilik politikası →</a></p>
+  </section>
+
+  <footer>
+    <p>Gölge Diyarı · <span id="y"></span></p>
+  </footer>
+</div>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
